@@ -1,0 +1,16 @@
+div {
+    padding: 50 px;
+    width: 200px;
+    display: inline-block;
+}
+
+#cart {
+    float: right;
+    padding-right: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

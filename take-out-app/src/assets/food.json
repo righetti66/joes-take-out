@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "main": "Cheese Burger",
+        "side": "French Fries",
+        "drink": "Water",
+        "price": "10.99"
+    },
+    {
+        "id": 2,
+        "main": "Reuben",
+        "side": "Potato Chips",
+        "drink": "Soda",
+        "price": "8.99"
+    },
+    {
+        "id": 3,
+        "main": "Ribeye",
+        "side": "Baked Potato",
+        "drink": "Red Wine",
+        "price": "25.99"
+    }
+]
