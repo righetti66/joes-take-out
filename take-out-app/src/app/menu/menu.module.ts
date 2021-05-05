@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuRoutingModule } from './menu-routing.module';
 import { MenuComponent } from './menu.component';
 import { MenuListComponent } from './menu-list/menu-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import { MenuListComponent } from './menu-list/menu-list.component';
   imports: [
     CommonModule,
     MenuRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [MenuComponent],

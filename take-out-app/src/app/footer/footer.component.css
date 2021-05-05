@@ -3,3 +3,8 @@ div {
     width: 200px;
     display: inline-block;
 }
+
+p {
+    margin: 20px;
+}
+

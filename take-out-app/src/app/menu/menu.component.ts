@@ -5,7 +5,7 @@ import { Meal } from '../shared/interfaces';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
- // styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
   title: string = "";
@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.title = 'Menu';
+    this.title = 'Main Menu';
     this.dataService.getMeals().subscribe((meals: Meal[]) => this.meals = meals);
   }
 

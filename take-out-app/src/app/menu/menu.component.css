@@ -1,0 +1,11 @@
+.menu-body {
+    display: block;
+    text-align: center;
+}
+
+.title {
+    display: block;
+    color: orange;
+    margin-bottom: 150px;
+    font-family: monospace;
+}

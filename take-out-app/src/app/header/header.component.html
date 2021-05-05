@@ -1,22 +1,16 @@
-<h1>Joe's Take Out App</h1>
-<div>
-    <p id="home">Home</p>
-</div>
-<div>
-    <p id="nutrition-info">Nutrition-info</p>
-</div>
-
-<!-- <div>
-    <table>
-        <tr>
-            <td>
-                Home |
-            </td>
-            <td>
-                Nutrition Info
-            </td>
-        </tr>
-    </table> -->
-<div id="cart">
-    <p>Cart</p>
-</div>
+<body>
+    <div id="header">
+        <h1></h1>
+        <h1>Joe's Take Out App</h1>
+        <!-- <div class="image">
+            <img class="burger-image" src="../../assets/gourmet-burger-scaled.jpg" />
+        </div> -->
+        <div class="header-body">
+            <p id="home">Home</p>
+        </div>
+        <div class="header-body">
+            <p id="nutrition-info">Nutrition-info</p>
+        </div>
+        <a id="cart" routerLink='/cart'>Cart({{getCount()}})</a>
+    </div>
+</body>

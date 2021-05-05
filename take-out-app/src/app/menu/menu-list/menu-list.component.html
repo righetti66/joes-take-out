@@ -1,15 +1,27 @@
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>Main course</th>
-                <th>Side dish</th>
-                <th>Drink</th>
-                <th>Price</th>
+<body>
+    <div class="wrapper">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <div class="row header">
+                        <th class="cell"></th>
+                        <th class="cell">Main dish</th>
+                        <th class="cell">Side</th>
+                        <th class="cell">Drink</th>
+                        <th class="cell">Price</th>
+                        <th class="cell"></th>
+                    </div>
+                </tr>
+            </thead>
+            <tr class="row" *ngFor="let food of meals">
+                <td class="cell">#{{food.id}}</td>
+                <td class="cell">{{food.main}}</td>
+                <td class="cell">{{food.side}}</td>
+                <td class="cell">{{food.drink}}</td>
+                <td class="cell">{{food.price | currency:currencyCode:'symbol'}}</td>
+                <input name="{{food.main}}" id="{{food.id}}" type="button" value="Add to Cart" (click)="add($event)" />
             </tr>
-        </thead>
-        <tr *ngFor="let food of filteredMeals">
-            <td>{{food.main}}</td>
-        </tr>
-    </table>
-</div>>
+        </table>
+    </div>
+</body>
